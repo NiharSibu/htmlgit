@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<title> Fillup Booking Details </title>
+<style>
+    table{
+        background-color: bisque;
+    }
+</style>
+</head>
+<body>
+    <center>
+    <fieldset>
+          <!--  <legend>Details</legend> -->
+    <table>
+        <tr> <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DETAILS </th></tr>
+        
+            <tr><td> Title</td>
+             <td><select  id="title">
+                 <option value="Mr">Mr.</option>
+                 <option value="Miss">Miss</option>
+                 <option value="Mrs">Mrs.</option>
+                 <option value="Others">Others</option>
+                </select></td></tr>
+            <tr><td> First name</td>
+             <td><input type = "text" id="firstname" placeholder="Enter First Name"  name=""></td></tr>
+            <tr><td> Lastname</td>
+             <td><input type = "text" id="lastname"placeholder="Enter Last Name" name=""></td></tr>
+            <tr><td> Address</td>
+             <td><input type = "text" id="address"placeholder="Enter Address" name=""></td></tr>
+            <tr><td> City</td>
+             <td><input type = "text" id="city" placeholder="Enter City" name=""></td></tr>
+            <tr><td> State</td>
+             <td><input type = "text" id="state" placeholder="Enter State"name=""></td></tr> 
+            <tr><td> Phone</td>
+             <td><input type = "text" id="fax" placeholder="Enter Fax"name=""></td></tr> 
+            <tr><td> Email</td>
+             <td><input type = "email" id="email"placeholder="Enter Email" name=""></td></tr>
+            <tr><td> Payment by:</td>
+             <td ><input type = "radio" id="paypal" name="yesorno"  value="">PayPal </br>
+             <input type = "radio" id="manual" name="yesorno"  value="">Manual: Money on arrival</br>
+             <input type = "radio" id="credit" name="yesorno"  value="">Credit Card </br>
+            </td></tr>    
+            <tr><td> Any additional request:</td>
+            <td><textarea rows="3" cols="30" id="any"></textarea></tr>
+              <tr><td></td> <td> <input type = "submit" id="sub" value="submit"  onclick="fn1()"></td></tr>
+    </table>
+  </fieldset>
+  </center>
+</body>
+</html>
+<script src= "form.js" type="text/javascript"></script>
